@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6e</title>
+</head>
+<body>
+    <script>
+        const age = 70;
+        const isHoliday = true;
+
+        if ((age <= 6 || age >= 65) && !isHoliday) {
+            console.log('Discount !')
+        }
+        /*
+        This Solution Also works 
+        if (age <= 6 || age >= 60) {
+            if(isHoliday === true) {
+                console.log('No Discount today!');
+            }
+            else{
+                console.log('Discount');
+            }
+        } */
+        else {
+            console.log('No Discount!');
+        }
+    </script>
+</body>
+</html>

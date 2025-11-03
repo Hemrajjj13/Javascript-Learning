@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-else</title>
+</head>
+<body>
+    <h1>if else statements</h1>
+    <script>
+
+        // let a = 25;
+        // let grade = 'A';
+        //  if (a >= 10 && grade=='A') {
+        //     console.log("Condition is true");
+        //  }
+        //  else {
+        //     console.log("Condition is false");
+        //  }
+/*
+         let math = 25;
+         let phys = 20;
+         let chem = 35;
+         let bio = 44;
+         let env = 49;
+
+         phys += 30;
+         env++;
+         if ( (math==50 || phys>=50) && (bio!=50 || chem>50 )&& env<=50 ) {
+            console.log("Conditions are true");
+         } else {
+            console.log("Conditions are false");
+         }
+*/
+
+        let marks = 90;
+
+        if (marks>=90) {
+            console.log("Marks :",marks,"grade : A");
+        } else if (marks>=75){
+            console.log("Marks :",marks,"grade : B");
+        }else if (marks>=60){
+            console.log("Marks :",marks,"grade : C");
+        }else if (marks>=45){
+            console.log("Marks :",marks,"grade : D");
+        }else if (marks>=35){
+            console.log("Marks :",marks,"grade : E");
+        }
+        else{
+            console.log("Fail");
+        }
+    /****************SWITCH Cases***************/
+
+    let day = "Monday";
+    switch (day) {
+        case "Monday":
+            console.log("Start of the week");
+            break;
+        case "Friday":
+            console.log("End of the week");
+            break;
+        default:
+            console.log("Just another day");
+    }
+
+
+    </script>
+</body>
+</html>

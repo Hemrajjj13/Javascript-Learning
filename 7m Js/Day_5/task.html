@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+  </head>
+  <body>
+    <button onclick="masterfun(4)">4</button>
+    <button onclick="masterfun(5)">5</button>
+    <button onclick="masterfun(6)">6</button>
+
+    <script>
+        function masterfun(num) {
+
+            switch (num) {
+                case 4:
+                    funFor4(num);
+                    break;
+                case 5:
+                    funFor5(num);
+                    break;
+                case 6:
+                    funFor6(num);
+                    break;
+                default:
+                    break;
+            }
+/*            if(num == 4) {
+                funFor4(num);
+            }
+            else if(num == 5) {
+                funFor5(num);
+            }
+            else if(num == 6) {
+                funFor6(num);
+            }
+*/
+        }
+        function funFor4(num) {
+            for(let i = 1; i<=10; i++) {
+                console.log(i * num);
+            }
+        }
+        function funFor5(num) {
+            for(let i = 1; i<=10; i++) {
+                console.log(i * num);
+            }
+        }
+        function funFor6(num) {
+            for(let i = 1; i<=10; i++) {
+                console.log(i * num);
+            }
+        }
+
+        
+    </script>
+  </body>
+</html>

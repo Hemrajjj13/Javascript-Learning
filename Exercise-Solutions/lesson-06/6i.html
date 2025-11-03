@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6i</title>
+  </head>
+  <body>
+    <p>Guess the coin flip</p>
+    <button
+      onclick="
+      let randomNumber = Math.random();
+        let result;
+
+        if (randomNumber < 0.5) {
+            result = 'Heads';
+        }
+        else {
+            result = 'Tails';
+        }
+    if (result === 'Heads') {
+        console.log('Correct Guess');
+    }
+    else{
+        console.log('Incorrect Guess');
+    }
+    "
+    >
+      Heads
+    </button>
+    <button
+      onclick="
+    let randomNumber = Math.random();
+        let result;
+
+        if (randomNumber < 0.5) {
+            result = 'Heads';
+        }
+        else {
+            result = 'Tails';
+        }
+    if (result === 'Tails') {
+        console.log('Correct Guess');
+    }
+    else{
+        console.log('Incorrect Guess');
+    }
+    "
+    >
+      Tails
+    </button>
+    <script>
+      // let randomNumber = Math.random();
+      // let result;
+
+      // if (randomNumber < 0.5) {
+      //     result = 'Heads';
+      // }
+      // else {
+      //     result = 'Tails';
+      // }
+      // console.log(`Result: ${result}`);
+    </script>
+  </body>
+</html>

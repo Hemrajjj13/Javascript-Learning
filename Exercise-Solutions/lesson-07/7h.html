@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7h</title>
+</head>
+<body>
+    
+    <script>
+        // convertLength(32, 'km', 'miles');
+        convertLength(5, 'kmm', 'ft');
+        // convertLength(50, 'miles', 'miles');
+        // convertLength(50, 'km', 'km');
+
+        function convertLength(length, from, to) {
+
+            if (from == 'miles' && to == 'miles') {
+                console.log(`${length} miles`);
+            } 
+            else if (from == 'km' && to == 'km') {
+                console.log(`${length} km`);
+            }
+            else if (from == 'km' && to == 'miles') {
+
+                kmToMiles(length);
+
+                function kmToMiles() {
+                    let miles = 0;
+                    miles = length * 0.621371;
+                    console.log(`${Math.round(miles)} miles`);
+                }
+            }
+            else if (from == 'miles' && to == 'km') {
+                milesToKm(length);
+
+                function milesToKm(length) {
+                    let km;
+                    km = length * 1.6;
+                    console.log(`${Math.round(km)} km`);
+                }
+            }
+            else if (from == 'miles' && to == 'ft') {
+                ft = length * 5280;
+                console.log(`${ft} ft`);
+            }
+            else if (from == 'km' && to == 'ft') {
+                ft = length * 3281;
+                console.log(`${ft} ft`);
+            }
+            
+        }
+
+    </script>
+
+</body>
+</html>

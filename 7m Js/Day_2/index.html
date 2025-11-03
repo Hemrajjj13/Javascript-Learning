@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 5;
+      let b = 6;
+      console.log("a + b =", a + b);
+      console.log("a - b =", a - b);
+      console.log("a / b =", a / b);
+      console.log("a % b =", a % b);
+      console.log("a + b =", a + b);
+
+      console.log("Assignment Operators");
+      c = 6;
+      d = 20;
+
+      a += 5; //a = a + 5
+      b -= 5; //b = b - 5
+      d /= 5; //d = d / 5
+
+      c++;
+
+      console.log(a);
+      console.log(b);
+      console.log(c);
+      console.log(d);
+
+      console.log("Comparison Operators");
+      let x = 10;
+      let y = '10';
+      let z = 20;
+
+      console.log("x == y :", x == y," Checks without datatype");
+      console.log("x === y :", x === y," Checks with datatype");
+      console.log("x != y :", x != z," Checks without datatype");
+      console.log("x !== y :", x != z," Checks without datatype");
+      console.log("x < z ",x < z);
+      console.log("x > z ",x > z);
+      console.log("x <= z ",x <= z);
+      console.log("x >= z ",x >= z);
+
+      console.log("**********Logical Operators**********");
+      p = 10;
+      q = 25;
+      r = false;
+      //Logical AND
+      console.log("Logical AND");
+      if(p && q){
+        console.log("all Conditions are true")
+      }
+      console.log("Logical OR");
+      //Logical OR
+      if(p || q){
+        console.log("all Conditions are true")
+      }else {
+        console.log("all Conditions are false")
+      }
+
+      // OR & AND combine use
+      console.log("Logical OR & AND");
+      if (p>30 || q<30 && r) {
+        console.log("All condtns are true");
+      } else {
+        console.log("All condtns are false");
+      }
+
+    </script>
+  </body>
+</html>

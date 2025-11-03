@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <button onclick="table(3)">Click</button>
+
+    <script>
+      fun();
+
+      function fun() {
+        console.log("Function one");
+        let a = 45;
+        let b = 6;
+        let c = 6;
+        let d = a + b + c;
+        console.log(d);
+      }
+
+      function table(num) {
+        for (let i = 1; i <= 10; i++) {
+          console.log(i * num);
+        }
+      }
+
+      // function expression
+
+      let ch1 = function () {
+        console.log("Ch2 called;");
+      };
+
+      ch1();
+
+      // Arrow function
+      const ch3 = () => {
+        console.log("Ch3 called");
+      };
+      ch3();
+
+      // Anonymous Function
+      setTimeout(() => {
+        console.log("Anonymous function called");
+      }, 5000);
+
+      // Immediately invoked function expression
+      (function () {
+        console.log("Immediately Invoked Function Execution!");
+      })();
+
+      // argument of function
+      const fun1 = (name, std) => {
+        console.log(name, std);
+      };
+      let name = "Deepak";
+      let std = "5th";
+      fun1(name, std);
+
+      // callback function
+      const call1 = () => {
+        console.log("Callback 1");
+      };
+      const call2 = (call1) => {
+        console.log("Callback 1");
+        call1();
+      };
+      call2(call1);
+      // return function
+      const ret = () => {
+        return "Hello Hemraj";
+      };
+      console.log(ret());
+      var data = ret();
+      console.log(data);
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 5;
+        let b = 10;
+        let c = true;
+        let d = false;
+        let e = undefined;
+        if(a<b ||e && b>a) { 
+            console.log("three Conditions are true");
+
+        }else {
+            console.log("no conditions are true");
+        }
+
+        // LOgical NOT
+        p = 5;
+        q = "30";
+        r = p <= q;
+        console.log("Logical NOT");
+        if (!r) {
+            console.log(" r is false");
+        } else {
+            console.log("r is true");
+        }
+
+        // unary operators
+        let x = 5;// intial declared value
+        y = x++;// post increment
+        z = ++x;// pre increment 
+        console.log(x);
+        console.log(y);
+        console.log(z);
+
+        //ternary operators
+        let age = 45;
+        let eligibility = age >= 18 ? "eligible to vote" : "Not eligible to vote";
+        console.log(eligibility);
+    </script>
+</body>
+</html>

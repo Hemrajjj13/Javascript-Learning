@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+</head>
+<body>
+    <h1 >Hello, JavaScript!</h1>
+    <button onclick="alert('Button Clicked!')">Click Me</button>
+    <script>
+             console.log("hello world :- in internal");
+        //var
+        var name = 35;
+        var name = "john";
+        console.log("name :-", name);
+        //let
+
+        let number = "john";
+        number = 45;
+        console.log("number :-", number);
+        //const
+        const a = true;
+
+        console.log("a :-", a);
+        //a = false; // This will cause an error
+        //console.log("a :-", a);   
+
+        //data types
+        //1. primitive data types
+        let str = "this is a string";
+        let num = 45;
+        let bool = false;
+        let und = undefined;
+        let nll = null; // it is a object
+        let sym = Symbol("this is a symbol");
+        let big = BigInt(9007199254740991n);
+        console.log("str :-", str);
+        console.log("num :-", num);
+        console.log("bool :-", bool);
+        console.log("und :-", und);
+        console.log("nll :-", nll);
+        console.log("sym :-", sym);
+        console.log("big :-", big);
+        //2. reference data types
+        //array
+        let arr = [1, 2, 3, 4, 5];
+        console.log("arr :-", arr);
+        //object
+        let obj = {
+            name: "john",
+            age: 35,
+            isMarried: false,
+        };
+        console.log("obj :-", obj);
+        //function
+        function add(a, b) {
+            return a + b;
+        }
+        console.log("add(2, 3) :-", add(2, 3));
+        //3. dynamic typing
+        let x = 5;
+        x = "hello";
+        console.log("x :-", x);
+        var globalVar = "globalvariable";
+        // function test() {
+        //     console.log("test",globalVar)
+        // }
+
+        // test();
+
+    // function test2() {
+
+    //     var localVar = "localvariable";
+    //     console.log("test", globalVar);
+
+    // }
+    //  test2()
+    // console.log("outside function", localVar); 
+
+    {
+        let blockVar = "blockvariable";
+        const blockVar2 = "blockvariable2";
+        var blockVar3 = "blockvariable3";
+        console.log("inside block", blockVar);
+    }
+    console.log("outside block", blockVar3);
+    </script>
+</body>
+</html>
+
