@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        // objects give functinality to store multiple values
+
+        //     why we use objects ? 
+        //      --> objects make our code more organised 
+        //     -> instead of making multiple varibles we can create one object
+        //     ->objects allow us to create multiple values together
+        
+/*
+        // creating objects 
+        const product = { 
+            name: 'socks',
+            price: 1090
+        };
+        console.log(product);// output {name: 'socks', price: 1090}
+        console.log(product.name); // socks
+        console.log(product.price); //1090
+
+        product.name = 'cotton socks'; // updates name
+        product.quantity = 4; // create new property into product
+
+        delete product.quantity; // deletes the property
+
+        console.log(product); // print the updated name 
+        console.log(product.name); // print the updated object
+        console.log(typeof product); // prints typeof product object
+
+*/
+
+        const product2 = {
+            name: 'shirt',
+            ['delivery-time']: '1 day', // square bractes are optional here
+            rating: {
+                stars:4.5,
+                count: 87
+            },
+            // function inside object 
+            fun: function function1() {
+                console.log('Function inside object');
+            }
+        };
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']); // bracket notation -> lets us use properties that dont work with dot notation
+        console.log(product2['delivery-time']);
+        console.log(product2.rating.stars);
+        
+        product2.fun();
+        console.log(typeof console);//object
+        console.log(typeof console.log);// function
+
+        console.log(JSON.stringify(product2));//type will be string
+        const jsonString = JSON.stringify(product2);
+        console.log(JSON.parse(jsonString));
+    </script>
+</body>
+</html>
