@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods Practice</title>
+  </head>
+  <body>
+    <script>
+      // -----------------------------
+      // Array.splice() → Modify array contents (add/remove/replace elements)
+      // -----------------------------
+      let array1 = [10, 20, 30, 40, 50, 60, 70, 80, 100];
+      // Remove 4 elements starting from index 2 and insert "hello", "Hemraj"
+      array1.splice(2, 4, "hello", "Hemraj");
+      console.log("After splice:", array1);
+
+      // Another splice example
+      let array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+      array2.splice(1, 4, "hello-1"); // removes 4 items from index 1, adds one new
+      array2.splice(5, 3, "hello-2"); // removes 3 items from index 5, adds one new
+      array2.splice(13, 1, "end");    // replaces last element with "end"
+      console.log("Modified array2:", array2);
+
+      // -----------------------------
+      // Array.slice() → Extract part of an array (does NOT modify original)
+      // -----------------------------
+      let array3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+      let subarray = array3.slice(1, 12); // extract elements from index 1 to 11
+      console.log("Subarray using slice:", subarray);
+
+      // -----------------------------
+      // Array.concat() → Merge two or more arrays
+      // -----------------------------
+      let array4 = ["Hemraj", "Vaibhav", "Ganesh", 5];
+      let array5 = [4, 6, 7, 8];
+      let array6 = array4.concat(array5);
+      console.log("Concatenated array:", array6);
+
+      // -----------------------------
+      // Array.map() → Returns a new array by applying a function to each element
+      // -----------------------------
+      let array7 = [10, 20, 30, 40, 50, 60, 70, 80, 100];
+      
+      // Example 1: Logging doubled values (map is usually used to return new array)
+      array7.map((item) => {
+        console.log("Double value:", item * 2);
+      });
+
+      // Example 2: Create a new array with elements multiplied by 3
+      let data = array7.map((item) => item * 3);
+      console.log("Mapped array (×3):", data);
+
+      // -----------------------------
+      // Array.filter() → Returns a new array containing elements that pass a condition
+      // -----------------------------
+      let array8 = [10, 20, 30, 40, 50, 60, 70, 80, 100];
+      let data1 = array8.filter((item) => item > 50); // only elements greater than 50
+      console.log("Filtered array (>50):", data1);
+
+      // -----------------------------
+      // Array.forEach() → Executes a function on each element (does not return anything)
+      // -----------------------------
+      array8.forEach((item) => {
+        console.log("ForEach item:", item);
+      });
+
+      // -----------------------------
+      // Array.reduce() → Reduces array to a single value (e.g., sum, product)
+      // -----------------------------
+      let array9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // `acc` = accumulator (stores running total), `n` = current value
+      // Initial value = 0
+      let sum = array9.reduce((acc, n) => acc + n, 0);
+      console.log("Sum using reduce:", sum);
+
+/*
+splice()	Add/remove/replace elements	✅ Yes
+slice()	Extract a portion of the array	❌ No
+concat()	Join multiple arrays	❌ No
+map()	Create a new array with transformed elements	❌ No
+filter()	Create a new array based on a condition	❌ No
+forEach()	Loop through elements (no return value)	❌ No
+reduce()	Combine all elements into a single value	❌ No
+*/
+    </script>
+  </body>
+</html>

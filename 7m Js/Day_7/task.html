@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAsk</title>
+</head>
+<body>
+    <p>
+        <button onclick="
+            del('delf');
+            ">Delete front</button>
+            <button onclick="
+            del('dele');
+            ">Delete End</button>
+    </p>
+    <p>
+        <button onclick="
+    masterfun(1, 'Hemraj');
+    "
+    >S Name 1-f</button>
+    <button onclick="
+    masterfun(-1, 'Vaibhav');
+    "
+    >E Name 1-f</button>
+
+    </p>
+
+    <p>
+        <button onclick="
+    masterfun(2, 'Ganesh');
+    "
+    >S Name 2-f</button>
+    <button onclick="
+    masterfun(-2, 'Krushna');
+    "
+    >E Name 2-e</button>
+
+    </p>
+
+    <p>
+        <button onclick="
+    masterfun(3, 'ABS');
+    "
+    >S Name 3-f</button>
+    <button onclick="
+    masterfun(-3, 'BBS');
+    "
+    >E Name 3-e</button>
+
+    </p>
+
+    <p>
+        <button onclick="
+    masterfun(4, 'DAHJ');
+    "
+    >S Name 4-f</button>
+    <button onclick="
+    masterfun(-4, 'JHAD');
+    "
+    >E Name 4-e</button>
+
+    </p>
+
+    <p>
+        <button onclick="
+    masterfun(5, 'FIFTH');
+    "
+    >S Name 5-f</button>
+    <button onclick="
+    masterfun(-5, 'FIFTH last');
+    "
+    >E Name 5-e</button>
+
+    </p>
+
+
+    <script>
+
+        let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+        function del(fun) {
+            if(fun == 'delf') {
+                a.shift();
+            }else if (fun == 'dele') {
+                a.pop();
+            }
+            console.log(a);
+        }
+        function masterfun(num, name) {
+            if (num == 1){
+                a.unshift(name)
+            }
+            else if(num == -1) {
+                a.push(name);
+            }
+            else if(num == 2) {
+                a.splice(1, 1, name);
+            }
+            else if(num == -2) {
+                a.splice(a.length-1, 1, name);
+            }
+            else if(num == 3) {
+                a.splice(2, 1, name);
+            }
+            else if(num == -3) {
+                a.splice(a.length-2, 1, name);
+            }
+            else if(num == 4) {
+                a.splice(3, 1, name);
+            }
+            else if(num == -4) {
+                a.splice(a.length-3, 1, name);
+            }
+            else if(num == 5) {
+                a.splice(4, 1, name);
+            }
+            else if(num == -5) {
+                a.splice(a.length-4, 1, name);
+            }
+
+            console.log(a);
+        }
+        
+
+    </script>
+</body>
+</html>

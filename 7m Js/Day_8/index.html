@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods Practice</title>
+  </head>
+  <body>
+    <script>
+      // -----------------------------
+      // Basic Variables
+      // -----------------------------
+      let name = "Rahul";
+      let age = 22;
+      let city = "Pune";
+      console.log(name);
+      console.log(`Hello ${name}, are you ${age}? & You are from ${city}.`);
+
+      // -----------------------------
+      // String.length → Returns length of string
+      // -----------------------------
+      let str1 = "Hemraj";
+      console.log("Length of string:", str1.length);
+
+      // -----------------------------
+      // toLowerCase() & toUpperCase() → Convert string case
+      // -----------------------------
+      let cases = "         SJSd       aaJ   ";
+      console.log("Lowercase:", cases.toLowerCase());
+      console.log("Uppercase:", cases.toUpperCase());
+
+      // -----------------------------
+      // trim() → Removes whitespace from both ends
+      // -----------------------------
+      console.log("Trimmed string:", cases.trim());
+
+      // -----------------------------
+      // includes() → Checks if substring exists
+      // -----------------------------
+      console.log("Includes 'raj':", str1.includes("raj"));
+      console.log("Includes 'xyz':", str1.includes("xyz"));
+
+      // -----------------------------
+      // indexOf() & lastIndexOf() → Find position of substring
+      // -----------------------------
+      console.log("Index of 'j':", str1.indexOf("j"));
+      console.log("Last index of 'm':", str1.lastIndexOf("m"));
+
+      // -----------------------------
+      // slice(start, end) → Extract part of a string
+      // -----------------------------
+      let sl = " hello world";
+      console.log("Sliced (2,6):", sl.slice(2, 6));
+
+      // -----------------------------
+      // replace() & replaceAll() → Replace substring(s)
+      // -----------------------------
+      let rplc = "hello world";
+      console.log("Replace 'world' → 'universe':", rplc.replace("world", "universe"));
+      console.log("Replace all 'l' → 'p':", rplc.replaceAll("l", "p"));
+
+      // -----------------------------
+      // split() → Convert string into array
+      // -----------------------------
+      let splitStr = "hemraj, gamer";
+      console.log("Split by comma:", splitStr.split(","));
+
+      // -----------------------------
+      // charAt() & charCodeAt() → Character & ASCII code
+      // -----------------------------
+      console.log("Character at index 1:", rplc.charAt(1));
+      console.log("ASCII code at index 1:", rplc.charCodeAt(1));
+
+      // -----------------------------
+      // startsWith() & endsWith() → Check beginning or end of string
+      // -----------------------------
+      const start = "hello world";
+      console.log("Starts with 'hel':", start.startsWith("hel"));
+      console.log("Ends with 'ab':", start.endsWith("ab"));
+
+      // -----------------------------
+      // concat() → Join strings
+      // -----------------------------
+      let m = "mama";
+      let n = "miya ";
+      console.log("Concatenated string:", m.concat(n));
+
+/*
+String Method	               Description	                                Modifies Original?
+length	                    Returns length of string	                    ❌ No
+toLowerCase() / toUpperCase()	Change string case	                        ❌ No
+trim()	                    Remove whitespace	                        ❌ No
+includes()	                Check if substring exists	                ❌ No
+indexOf() / lastIndexOf()	Find position of substring	                ❌ No
+slice()	                    Extract substring	                        ❌ No
+replace() / replaceAll()	Replace substring	                        ❌ No
+split()	                    Convert string → array	                    ❌ No
+charAt() / charCodeAt()	    Get character / ASCII code	                ❌ No
+startsWith() / endsWith()	Check start or end of string	            ❌ No
+concat()	                Join multiple strings	                    ❌ No
+*/
+    </script>
+  </body>
+</html>
