@@ -6,18 +6,33 @@
     <title>DOM</title>
   </head>
   <body>
-    <h1>Docement Object Model</h1>
+    <h1>Document Object Model</h1>
     <button>hello</button>
+    <button class="js-button">second button</button>
 
     <script>
-        
-    //   document.body.innerHTML = "Lame";
-    //   document.title = "Lame Title";
-    //   document.body.innerHTML = "Lame";
+    
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button')
+        .innerHTML = 'Changed';
 
+        const buttonElement = document.querySelector('.js-button');
+      console.log(buttonElement);
+
+      /*  
         console.log(document.title);
         document.title = 'Changed';
+
         console.log(document.body);
+        console.log(typeof document.body);
+
+        console.log(document.body.innerHTML);
+        document.body.innerHTML = '<button>GoodJob</button>';
+
+        document.body.innerHTML = "Lame";
+        document.title = "Lame Title";
+        document.body.innerHTML = "Lame";
+      */
     </script>
   </body>
 </html>
