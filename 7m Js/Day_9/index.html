@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+<script>
+
+    // var name = 'Ganesh';
+    // var age = 22;
+    // var std = 'BCA';
+
+
+    // Object Literal Method
+    var userData = {
+        name: 'Ganesh',
+        age: 22,
+        std: 'BCA'
+    };
+    console.log(userData.name);
+    console.log('Dot Notation',userData.name);
+    console.log('Bracket notation', userData['age']);
+    
+    //using new objecs
+    var newObject = new  Object();
+    newObject.name = 'rahul';
+    newObject.age = 22;
+    newObject.std = 'BCA';
+
+    console.log('new Object', newObject);
+
+    // methods inside object 
+    const obj = {
+        name: 'Soham',
+        age: 22,
+        arr: [1, 2, 3, 4],
+        sum: () => {
+            console.log('Sum');
+            return 4*6;
+        }
+    };
+    console.log(obj);
+    console.log('sum fun: ', obj.sum());
+    console.log(obj.arr);
+
+    // object destructuring 
+    const obj1 = {
+        name1: 'Hemraj',
+        age1: 22,
+        std1: 'BE'
+    };
+    const {name1, age1, std1} = obj1;
+    console.log(name1);
+    console.log(age1);
+    console.log(std1);
+
+    // this keyword 
+    const obj2 = {
+        name: 'Hemraj',
+        age:26,
+        sum: () => {
+            console.log('THis keyword', this.name);
+            return '';
+        }
+    }
+    obj2.sum();
+
+</script>
+
+</body>
+</html>

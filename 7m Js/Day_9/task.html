@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+/*
+    const userData = [
+        { name: "Aarav", age: 20, std: "BCA" },
+        { name: "Vivaan", age: 21, std: "BTech" },
+        { name: "Aditya", age: 22, std: "BSc" },
+        { name: "Krishna", age: 23, std: "BCom" },
+        { name: "Rohan", age: 19, std: "BBA" },
+        { name: "Laksh", age: 20, std: "BCA" },
+        { name: "Sahil", age: 22, std: "BA" },
+        { name: "Ishaan", age: 24, std: "BTech" },
+        { name: "Kabir", age: 21, std: "BSc" },
+        { name: "Atharv", age: 23, std: "BCom" },
+        { name: "Yash", age: 20, std: "BBA" },
+        { name: "Aryan", age: 22, std: "BCA" },
+        { name: "Kartik", age: 24, std: "BTech" },
+        { name: "Om", age: 21, std: "BSc" },
+        { name: "Dev", age: 22, std: "BCom" },
+        { name: "Mihir", age: 23, std: "BA" },
+        { name: "Jay", age: 20, std: "BBA" },
+        { name: "Harsh", age: 22, std: "BCA" },
+        { name: "Pranav", age: 24, std: "BTech" },
+        { name: "Tanish", age: 21, std: "BSc" },
+        { name: "Vedant", age: 23, std: "BCom" },
+        { name: "Shivam", age: 20, std: "BA" },
+        { name: "Manav", age: 22, std: "BCA" },
+        { name: "Ayan", age: 24, std: "BTech" },
+        { name: "Hriday", age: 21, std: "BSc" },
+        { name: "Reyansh", age: 23, std: "BCom" },
+        { name: "Ayush", age: 20, std: "BBA" },
+        { name: "Nirav", age: 22, std: "BCA" },
+        { name: "Rudra", age: 24, std: "BTech" },
+        { name: "Parth", age: 21, std: "BSc" },
+    ];
+    
+    userData.map((start, end)=>{
+        console.log(end,start.name, start.age, start.std);
+    });
+
+    for(let i = 0; i < userData.length; i++) {
+        console.log(`${i+1} ${userData[i].name} ${userData[i].age} ${userData[i].std}`);
+    }
+
+*/
+ const users = {
+            student: true,
+
+            studentData: [
+                { username: "arjun_k", age: 24, city: "Mumbai" },
+                { username: "neha_s", age: 28, city: "Pune" },
+                { username: "rahul_d", age: 31, city: "Delhi" },
+                { username: "priya_t", age: 26, city: "Hyderabad" },
+                { username: "vijay_r", age: 29, city: "Chennai" },
+                { username: "anita_p", age: 23, city: "Bengaluru" },
+                { username: "sandeep_m", age: 27, city: "Ahmedabad" },
+                { username: "manisha_j", age: 30, city: "Kolkata" },
+                { username: "rohit_v", age: 25, city: "Jaipur" }],
+           
+                teacherData: [
+                { username: "karishma_l", age: 32, city: "Surat" },
+                { username: "amit_b", age: 29, city: "Nagpur" },
+                { username: "tina_r", age: 22, city: "Lucknow" },
+                { username: "harsh_p", age: 27, city: "Indore" },
+                { username: "meena_d", age: 34, city: "Patna" },
+                { username: "alok_s", age: 28, city: "Bhopal" },
+                { username: "ruchi_k", age: 25, city: "Chandigarh" },
+                { username: "deepak_g", age: 33, city: "Coimbatore" },
+                { username: "kavita_m", age: 24, city: "Visakhapatnam" },
+                { username: "gaurav_h", age: 30, city: "Nashik" },
+                { username: "pooja_n", age: 26, city: "Vadodara" }
+            ]
+        };
+let {student, studentData, teacherData} = users;
+
+
+function forStudents(studentData) {
+    studentData.map((start, key)=>{
+        console.log(key,start.username, start.age, start.city);
+    });
+}
+function forTeachers(teacherData) {
+    teacherData.map((start, key)=>{
+        console.log(key,start.username, start.age, start.city);
+    });
+}
+
+if (users.student == true) {
+    forStudents(studentData);
+
+}
+else {
+    forTeachers(teacherData);
+}
+</script>
+    
+</body>
+</html>
