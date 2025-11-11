@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    
+
+    <script>
+
+
+        const studentData = [
+                { username: "arjun_k", age: 24, city: "Mumbai" },
+                { username: "neha_s", age: 28, city: "Pune" },
+                { username: "rahul_d", age: 31, city: "Delhi" },
+                { username: "priya_t", age: 26, city: "Hyderabad" },
+                { username: "vijay_r", age: 29, city: "Chennai" },
+                { username: "anita_p", age: 23, city: "Bengaluru" },
+                { username: "sandeep_m", age: 27, city: "Ahmedabad" },
+                { username: "manisha_j", age: 30, city: "Kolkata" },
+                { username: "sandeep_m", age: 27, city: "Ahmedabad" },
+                { username: "rohit_v", age: 25, city: "Jaipur" }];
+
+        setTimeout(() => {
+            studentData.map((item, key) => {
+                console.log(`${key+1} ${item['username']} ${item['age']} ${item['city']}`);
+            })
+        },5000);
+
+    </script>
+</body>
+</html>

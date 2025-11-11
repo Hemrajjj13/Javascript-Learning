@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    
+    <button onclick="fun3();">BUTTon</button>
+<script>
+    let a = 1;
+    // setTimeout
+        for (let i = 0; i < 6; i++) {
+            setTimeout(() => {
+                console.log("Technoblade Never Dies", a--);
+                // console.log('DrCoconut');
+            },i * 5000);
+        }
+
+        let fun1 = () => {
+            console.log('GGS');
+    
+            
+        }
+        setTimeout(fun1(), 3000);
+        //setInterval 
+            let fun2 = setInterval(() => {
+                console.log('setInterval', a++)
+            }, 1000);
+
+            let fun3 = () => {
+                clearInterval(fun2);
+            }
+
+    
+
+    
+</script>
+
+</body>
+</html>
