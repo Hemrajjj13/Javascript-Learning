@@ -69,8 +69,8 @@ const score = JSON.parse(localStorage.getItem('score')) || {
         innerHTML = result;
 
         document.querySelector('.js-moves').innerHTML = `You
-      <img src="/JsBySuperSimpleDev/Daily-Learning/Lesson-10-HTML,CSS,JS-Together/images/${playerMove}-emoji.png" class="move-icon" alt="${playerMove}-emoji">
-      <img src="/JsBySuperSimpleDev/Daily-Learning/Lesson-10-HTML,CSS,JS-Together/images/${computerMove}-emoji.png" class="move-icon" alt="${computerMove}-emoji">
+      <img src="/JsBySuperSimpleDev/Daily-Learning/images/${playerMove}-emoji.png" class="move-icon" alt="${playerMove}-emoji">
+      <img src="/JsBySuperSimpleDev/Daily-Learning/images/${computerMove}-emoji.png" class="move-icon" alt="${computerMove}-emoji">
       Computer`;
 
         

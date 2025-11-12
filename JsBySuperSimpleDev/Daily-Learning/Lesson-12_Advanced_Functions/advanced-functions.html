@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+<body>
+    
+    <button onclick="" class="js-button">Click</button>
+
+
+<script>
+const buttonElement = document.querySelector('.js-button');
+
+const eventListener = () => {
+    console.log('click');
+}
+buttonElement.addEventListener('click', eventListener);
+
+buttonElement.removeEventListener('click', eventListener);
+
+buttonElement.addEventListener('click', () => {
+    console.log('click2');
+});
+
+/*
+    function greeting() {
+        console.log('Hello');
+    }
+    greeting();  
+
+    const num = 2;
+    const function1 = function () {
+        console.log('Hello2');
+    }
+
+    console.log(function1);
+    console.log(typeof function1);
+    function1();
+
+    const object1 = {
+        num: 2,
+        fun: function () {
+            console.log('Hello3');
+        }
+    };
+    object1.fun();
+
+     function display(param) {
+        console.log(param);
+    }
+    display(2);
+
+    function run(param) {
+        param();
+    }
+    run(function() {
+        console.log('hello4');
+    });
+*/
+/*    setTimeout( function() {
+        console.log('timeout');
+        console.log('timeout2');
+    }, 3000);
+
+    //Asynchronous code
+    console.log('next line');
+
+    setInterval(function() {
+        console.log('interval');
+        // console.log('timeout2');
+    }, 3000)
+    console.log('next line');
+
+    [
+        'make dinner',
+        'wash dishes',
+        'watch youtube'
+    ].forEach((value, index) => {
+        if (value === 'wash dishes') {
+            return;
+        }
+        console.log(index);
+        console.log(value);
+    });
+
+    const regularFunction = function() {
+        console.log('Hello');
+        return 5;
+    }
+
+    const arrowFunction = (param, param2) => {
+        console.log('Hello');
+        return 5;
+    }
+    arrowFunction();
+
+    const oneParam = param => {
+        console.log(param + 1);
+    };
+    oneParam(4);
+
+    const oneLine = () => 2 + 2;
+    console.log(oneLine());
+
+
+    const object2 = {
+        method: () => {
+
+        },
+        method() {
+
+        }
+     }
+*/
+
+</script>
+
+</body>
+</html>
