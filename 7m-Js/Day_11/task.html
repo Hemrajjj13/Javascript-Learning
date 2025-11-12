@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAsk</title>
+</head>
+<body>
+    <button onclick="
+        forButtton('dazai');
+        ">Image-1</button>
+    <button onclick="
+    forButtton('kakashi');
+    ">Image-2</button>
+    <button onclick="
+    forButtton('naruto');
+    ">Image-3</button>
+    <img id="img">
+
+    <script>
+
+        const img = document.getElementById('img');
+
+        function forButtton(image) {
+            const img = document.getElementById('img');
+            img.setAttribute('src', `/7m-JS/assets/${image}.jpg`);
+            img.setAttribute('height', '300');
+            img.setAttribute('width', '300');
+        }
+
+    </script>
+</body>
+</html>

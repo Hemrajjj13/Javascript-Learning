@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 class="hheding-1" id="heading-1">Hello</h1>
+    <p id="heading-2">Heading 2</p>
+    <span class="span-class"></span>
+    <span class="span-class"></span>
+    <span class="span-class"></span>
+    <span class="span-class"></span>
+    <span class="span-class"></span>
+
+    <img id="img" height="100" width="100">
+    
+    <script>
+
+        // document.getElementById('heading-1').innerText="Hello World";
+        // const cls = document.getElementsByClassName('span-class');
+        // cls[0].innerText = "Hello 1"
+        // cls[1].innerText = "Hello 2"
+        // cls[2].innerText = "Hello 3"
+        // cls[3].innerText = "Hello 4"
+        // cls[4].innerText = "Hello 5"
+        // document.querySelector('#heading-1').innerHTML = 'Hellooooooo';
+
+        console.log(document.querySelectorAll('.span-class').innerText = 'HELLLLLL NAHHHHHHHHHAAAHAHAHAHAHAHAH');
+
+        // content manipulation 
+
+        const data = document.getElementById('heading-1');
+        console.log(data.innerText)
+        data.innerText = 'hellllllllllllllooooo brewwwwwwwwww';
+
+        const data2 = document.getElementById('heading-2');
+        console.log(data2.innerText);
+        // console.log(data2.);
+        data2.innerHTML = `<i style="font-size:30px; color:"> ${data2.innerText} </i>`
+
+        const img = document.getElementById('img');
+        img.setAttribute('src', '/7m-JS/assets/dazai.jpg');
+        img.setAttribute('height', '200');
+        img.setAttribute('class', 'clcl');
+        img.setAttribute('width', '200');
+
+        console.log(img.getAttribute('class'));
+        console.log(img.removeAttribute('id'));
+
+
+
+
+</script>
+</body>
+</html>
